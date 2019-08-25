@@ -8,7 +8,7 @@ from .models import Image
 
 # Create your views here.
 def welcome(request):
-    images = Image.get_all_images()
+    images = Image.objects.all()
     date = dt.date.today()
     return render(request, 'blog/index.html', {'images':images} )
 
