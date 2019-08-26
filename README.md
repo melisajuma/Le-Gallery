@@ -22,7 +22,7 @@ A digital album application that displays my photos for others to see and the de
 
 ## Set-up and Installation
 
-    - Clone the Repository
+    - Clone the Repository (https://github.com/melisajuma/Le-Gallery.git)
     - Install python 3.6
     - Run "./start.sh" or "python3 manage.py server" from the terminal
 
