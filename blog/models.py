@@ -23,3 +23,13 @@ def __str__(self):
 def save_category(self):
     self.save()
        
+class Image(models.Model):
+    image_name = models.CharField(max_length=30)
+    image_description = models.TextField()
+    image_path = models.ImageField(upload_to = 'images/', default="")
+    image_location = models.ForeignKey(Location, on_delete=models.CASCADE)
+    image_category = models.ForeignKey(Category,on_delete=models.CASCADE)
+    mygalary_image = models.ImageField(upload_to = 'media/')
+    date_posted = models.DateTimeField(default=timezone.now)
+
+   
