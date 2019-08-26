@@ -32,4 +32,12 @@ class Image(models.Model):
     mygalary_image = models.ImageField(upload_to = 'media/')
     date_posted = models.DateTimeField(default=timezone.now)
 
+def __str__(self):
+    return self.image_name
+   
+@classmethod
+def get_all_images(cls):
+        images = Image.objects.all()
+        return images
+
    
