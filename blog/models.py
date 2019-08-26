@@ -40,4 +40,3 @@ def get_all_images(cls):
         images = Image.objects.all()
         return images
 
-   
