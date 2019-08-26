@@ -67,8 +67,10 @@ def filter_by_location(cls,location):
     filtered_result = cls.objects.filter(image_location__location_name__icontains=location)
     return filtered_result
    
-
-    
+@classmethod
+def search_by_category(cls,search_term):
+    images= cls.objects.filter(image_category__category_name__icontains=search_term)
+    return images
     
 
 
