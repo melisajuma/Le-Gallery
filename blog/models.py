@@ -40,3 +40,14 @@ def get_all_images(cls):
         images = Image.objects.all()
         return images
 
+@classmethod
+def get_image_by_id(cls,incoming_id):
+    image_result = cls.objects.get(id=incoming_id)
+    return image_result
+   
+def save_image(self):
+    self.save()
+       
+
+
+   
