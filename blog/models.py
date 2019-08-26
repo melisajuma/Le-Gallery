@@ -31,7 +31,7 @@ class Image(models.Model):
     image_category = models.ForeignKey(Category,on_delete=models.CASCADE)
     mygalary_image = models.ImageField(upload_to = 'media/')
     date_posted = models.DateTimeField(default=timezone.now)
-#    author = models.ForeignKey(User, on_delete=models.CASCADE)
+
    
 def __str__(self):
     return self.image_name

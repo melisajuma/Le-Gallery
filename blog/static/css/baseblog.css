@@ -4,5 +4,6 @@ body{
     background-repeat: no-repeat;
 }
 .navbar{
-    background-color:silver;
+    background-color:rgb(161, 159, 159);
+    font-weight: 200;
 }
