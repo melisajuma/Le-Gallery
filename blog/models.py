@@ -51,3 +51,16 @@ def save_image(self):
 def delete_image(self):
     self.delete()
        
+@classmethod
+def retrieve_all(cls):
+    all_objects = Image.objects.all()
+    for item in all_objects:
+        return item
+       
+
+    
+    
+
+
+   
+   
